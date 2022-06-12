@@ -64,6 +64,9 @@ header{
 .form-new-post input:focus{
     border-radius: 0 5px 5px 5px;
 }
+.form-new-post input:focus::placeholder{
+    color: transparent;
+}
 .label {
     position: absolute;
     opacity: 0;
