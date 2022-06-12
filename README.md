@@ -1,6 +1,6 @@
 # Grupo
 
-Valéria Gonçalez
+<p>Valéria Gonçalez</p>
 Nathaly Souza
 Glaucia Ximenes
 
