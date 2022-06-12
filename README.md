@@ -1,8 +1,8 @@
 # Grupo
 
 <p>Valéria Gonçalez</p>
-Nathaly Souza
-Glaucia Ximenes
+<p>Nathaly Souza</p>
+<p>Glaucia Ximenes</p>
 
 
 # CHECKPOINT-I-FRONT-END-II-PARTTIMEII-2022
