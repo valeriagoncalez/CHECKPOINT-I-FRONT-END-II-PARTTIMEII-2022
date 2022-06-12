@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2b2b2b; 
+}
+header,
+main {
+    width: 85vw;
+    margin: auto;
+}
+header{
+  display: flex;  
+  color: #fff;
+  padding: 20px 0;
+  
+}
+.form-new-post{  
+  margin-bottom: 24px;
+}
+
+.form-new-post .addDados,
+.form-new-post .buttons {
+    display: flex;
+    flex-wrap: wrap;    
+}
+.form-new-post .addDados {    
+    justify-content: space-between;
+}
+.form-new-post .buttons {
+    justify-content: flex-end;
+}
+.form-row {
+    position: relative;
+    width: 100%;
+}
+.form-row.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form-new-post input,
+.form-new-post select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #464646;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    background: #464646;
+    color: #fff;
+    font-size: 14px;    
+}
+
+.form-new-post input:focus,
+.form-new-post select:focus {
+    outline: none;
+    border: 1px solid #F74343;
+    
+}
+.form-new-post input:focus{
+    border-radius: 0 5px 5px 5px;
+}
+.label {
+    position: absolute;
+    opacity: 0;
+    transition: .2s bottom, .2s opacity;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.form-new-post input:focus + .label {
+    bottom: 100%;    
+    font-size: 16px;
+    color: #fff;
+    background: #F74343;
+    line-height: 1;
+    opacity: 1;
+    padding: 2px 12px;
+    border-radius: 5px 5px 0 0; 
+}
+.form-new-post input#preco:focus + .label {
+    bottom: 50%;
+   }
+.form-new-post .buttons {
+    text-align: right;
+}
+.form-new-post button{
+  width: 100%; 
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 35px ;  
+  border-radius: 5px;
+  background-color: #F74343;
+  cursor: pointer;
+  border: none;  
+}
+.form-new-post button:hover,
+.item:hover,
+a.button:hover {
+    transform: scale(1.02);
+    box-shadow:0 0 8px #d8d8d8; 
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;  
+}
+.item {
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  align-content: stretch;
+  width: 100%;
+  background: #2b2b2b;
+  color: #fff;  
+  border: 3px solid #fff;
+  transition: .3s ease-in-out;
+  margin-bottom: 30px;
+}
+.header-item,
+.footer-item-b {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header-item {
+    flex-direction: column;
+}
+.footer-item-b {  
+    flex-wrap: nowrap;    
+    border-top: 1px solid #fff;
+}
+.item img {
+  width: 100%;
+  height: auto;  
+}
+.item h2 {
+  font-size: 1.2em;
+  margin: .6em 0;
+  text-transform: uppercase;
+}
+.tipoprato {
+    padding: 20px;
+    color: #f74343;
+    font-size: 20px;
+    font-weight: 600;
+}
+.preco::before {
+    content: "$ ";
+}
+footer {
+    background: #202020;
+    color: #fff;
+}
+footer h1 {
+    font-size: 1em;
+}
+footer h2 {
+    font-size: .9em;
+}
+footer p {
+    font-size: .8em;
+}
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85vw;
+  margin: auto;
+  justify-content: space-between;
+  padding: 20px 0; 
+}
+.container-footer .col1,
+.container-footer .col2 {
+    margin-right: 20px;
+}
+.container-footer .col1,
+.container-footer .col2,
+.container-footer .col3 {
+    padding: 10px 0;
+}
+a.button {
+    display: block;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: #fff;
+    background: #f74343;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .item  {
+        width: 48%;
+        margin-right: 4%;
+   }
+   .item:nth-child(2n) {
+    margin-right: 0;
+   }
+   .form-new-post button{
+        width: auto; 
+    }
+    #preco,
+    #tipoprato {
+        width: 49%;
+    }
+    .form-new-post input#preco:focus + .label {
+        bottom: 100%;
+        left: 51%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .item  {
+        width: 22.5%;
+        margin-right: 3.3%;
+   }
+    .item:nth-child(2n) {
+         margin-right: 3.3%;
+   }
+    .item:nth-child(4n) {
+        margin-right: 0;
+   }
+   .form-new-post input#preco:focus + .label {
+        bottom: 100%;
+        left: 51%;
+   }
+}
+

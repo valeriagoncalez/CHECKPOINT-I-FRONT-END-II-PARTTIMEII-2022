@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Checkpoint I</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Cadastro de pratos</h1>      
+    </header>
+
+    <main>
+        <div class="form-new-post">
+            <form>
+                <div class="addDados">
+                    <div class="form-row">
+                        <input type="text" id="foto" name="foto" placeholder="Foto do prato"/>
+                        <label class="label" for="foto">Foto do prato</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="titulo" name="titulo" placeholder="Nome do prato"/>
+                        <label class="label" for="titulo">Nome do prato</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="descricao" name="descricao" placeholder="Descrição do prato"/>
+                        <label class="label" for="descricao">Descrição do prato</label>
+                    </div>
+                    <div class="form-row flex">
+                        <select id="tipoprato">
+                            <option value="" disabled selected>Selecione a origem do prato</option>
+                            <option value="Brasileira">Brasileira</option>
+                            <option value="Espanhola">Espanhola</option>
+                            <option value="Italiana">Italiana</option>
+                            <option value="Judia">Judia</option>
+                            <option value="Portuguesa">Portuguesa</option>
+                            <option value="Suíça/Alemã">Suíça/Alemã</option>
+                        </select>                    
+                        <input type="text" id="preco" name="preco" placeholder="Preço"/>
+                        <label class="label" for="preco">Preço</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="addPost">ADICIONAR</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container"></div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="col1">
+                <h1>CHECKPOINT FRONT II</h1>
+                <P>2022 - 2º Bimestre</P>
+                <p>Turma Part II</p>
+            </div>
+            <div class="col2">
+                <h2>SOBRE O PROJETO</h2>
+                <p>Layout inicial elaborado no Figma</p>
+                <a href="https://www.figma.com/file/omDyncjIjiHXyTpRorUnm7/FrontEnd_1Checkpoint?node-id=2%3A2" target="_blank" class="button">Visualizar no Figma</a>                         
+            </div>  
+            <div class="col3">
+                <h2>REALIZADO POR:</h2>
+                <p>Glaucia</p>
+                <p>Nataly</p>
+                <p>Valéria Gonçalez</p>
+            </div>            
+        </div>        
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
