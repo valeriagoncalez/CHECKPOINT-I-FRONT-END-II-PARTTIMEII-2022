@@ -30,7 +30,11 @@ addPostElemento.addEventListener('click', event => {
                 <div class="tipoprato">${novoPost.tipoprato}</div>
                 <div class="footer-item-b" >             
                     <div class="preco">${novoPost.preco}</div>
-                    <div class="social">Social</div>
+                    <div class="social">
+                        <img src ="imagens/heart-2.svg" alt="Favorito"/>
+                        <img src ="imagens/social-2.svg" alt="Compartilhar"/>
+                        <img src ="imagens/flag-2.svg" alt="Marcar"/>
+                    </div>
                 </div>
             </div>           
         </div>`
@@ -115,7 +119,11 @@ for (let post of posts) {
                 <div class="tipoprato">${post.tipoprato}</div>
                 <div class="footer-item-b" >           
                     <div class="preco">${post.preco.trim()}</div>
-                    <div class="social">Social</div>
+                    <div class="social">
+                        <img src ="imagens/heart-2.svg" alt="Favorito"/>
+                        <img src ="imagens/social-2.svg" alt="Compartilhar"/>
+                        <img src ="imagens/flag-2.svg" alt="Marcar"/>
+                    </div>
                 </div>    
             </div>   
         </div>
